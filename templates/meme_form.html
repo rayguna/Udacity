@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+    <h1> Generate Meme using an image from a url </h1>
+    <div class="card" style="width: 500px; max-width: 100%;">
+        <div class="card-body">
+            <form method="POST">
+
+                <div class="form-group">
+                    {% if image_url !="" %}
+                    The image url breed you entered is: {{image_url}}. 
+                    Update it in the form below:
+                    {% else %}
+                    {{form.image_url.label}}
+                    {% endif %}
+
+                    <!--input field-->
+                    {{form.image_url()}}
+                </div>
+    
+                <div class="form-group">
+                    {% if quote_body !="" %}
+                    The quote body you entered is: {{quote_body}}. 
+                    Update it in the form below:
+                    {% else %}
+                    {{form.quote_body.label}}
+                    {% endif %}
+
+                    <!--input field-->
+                    {{form.quote_body()}}
+                </div>
+    
+                <div class="form-group">
+                    {% if author_name !="" %}
+                    The quote body you entered is: {{author_name}}. 
+                    Update it in the form below:
+                    {% else %}
+                    {{form.author_name.label}}
+                    {% endif %}
+
+                    <!--input field-->
+                    {{form.author_name()}}
+                </div>               
+
+                <!--get form properties and methods-->
+                {{form.hidden_tag()}}
+                {{form.submit}}    
+
+            </form>
+        </div>
+    </div>
+
+</html>
+
