@@ -14,7 +14,9 @@ On a browser, the user can provide his/her own quotation and image via the meme_
 
 On a command line interface, the user provides the path to the .jpg image, as well as a quote body and the author.
 
-This project has been deployed online via a heroku platform url: https://meme-generator-py.herokuapp.com/.
+This project was deployed online via a heroku platform url: https://meme-generator-py.herokuapp.com/.
+
+Note: As of 10/23/23, the heroku platform displays Application error. This is because the dyno hours have been exhausted. This page is no longer available at this time.
 
 ## 3. Running the project
 
